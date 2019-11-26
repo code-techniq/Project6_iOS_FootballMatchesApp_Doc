@@ -10,3 +10,7 @@ This will be a beginner's tutorial for making an App with json parsing using API
 Create a new project and setup like we did previously in **Calculator App**. This step is similer with that App
 
 ## Second step: Creating the UI Part
+
+Let's start to design the Football App UI. In this App we use UITableview to show all the dynamic data in rows.In Table View we add a UITableViewCell in Which we add UIlabels to print the data, which is coming from server dynamically.
+
+just go to the Main.Storyboard file and start designing your app. There is a view in Main.Storyboard named **View Controller Scene**. This class is the main view of the application that the user interacts with. You can see a **+** button on the top.  Click on that button.  A small window will pop up, in which all the design elements are available. Search for the UITableView and drag and drop the UITableView to the View Controller. The View should look like this:
