@@ -6,4 +6,7 @@ This will be a beginner's tutorial for making an App with json parsing using API
 
 **Let's Start.**
 
-## First steps: Setting up Project
+# First steps: Setting up Project
+Create a new project and setup like we did previously in **Calculator App**. This step is similer with that App
+
+## Second step: Creating the UI Part
