@@ -47,9 +47,8 @@ Now add UILabel's @IBOutlet in **MatchTVC** like we did in **Calculator Tutorial
 
 Now It's time to run the Application with static Table View Content. For this, Add Table View @IBOutlet in ViewController Class. Use TableView **Delegates & DataSource** to show the **Number of rows** and **Display Reusable cells**.
 **What is TableView Delegates & DataSource**
-Datasource methods are used to generate tableView cells,header and footer before they are displaying..Delegate methods provide information about these cells, header and footer along with other user action handlers like cell selection and edit..
+Datasource methods are used to generate tableView cells,header and footer before they are displaying.Delegate methods provide information about these cells, header and footer along with other user action handlers like cell selection and edit.
 # Delegates & DataSource
 **func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return matchesList.count
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    }**
+        }**
+
