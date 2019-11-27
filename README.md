@@ -89,3 +89,6 @@ To download the content from server we use **Alamofire** Network Library.
 Why do you need Alamofire at all? Apple already provides URLSession and other classes for downloading content via HTTP, so why complicate things with another third party library?
 
 The short answer is Alamofire is based on URLSession, but it frees you from writing boilerplate code which makes writing networking code much easier. You can access data on the Internet with very little effort, and your code will be much cleaner and easier to read.
+
+We add **Alamofire** dependency using **Cocoa pods** . Add pod file in your project using following link:
+[Install Cocoa pods](https://guides.cocoapods.org/using/using-cocoapods.html)
