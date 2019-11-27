@@ -59,4 +59,9 @@ This is a DataSource method so it will be called on whichever object has declare
 
 Now create an **Extension** in ViewController Class and add TableView Delegates & DataSource.
   
-**Extensions** add new functionality to an existing class, structure, enumeration, or protocol type. This includes the ability to extend types for which you do not have access to the original source code
+**Extensions** add new functionality to an existing class, structure, enumeration, or protocol type. This includes the ability to extend types for which you do not have access to the original source code.
+viewController Class looks like as follows.
+
+<img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/12.png">
+
+
