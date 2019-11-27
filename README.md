@@ -77,3 +77,4 @@ Give an Idenifire to your cell in main.storyboard file and pass that Identifire 
 
 <img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/13.png">
 
+Now run the App. It will show static TableView on the Screen. Next step is to Hit an API and get data from server and set that data on Table and make it dynamic . Before moving forward Let's discuss that What is an API and how It works?
