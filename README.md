@@ -74,3 +74,6 @@ Now create a Reusable Cell object in **func tableView(_ tableView: UITableView, 
 **dequeueReusableCell**: For performance reasons, a table view data source should generally reuse UITableViewCell objects when it assigns cells to rows in its tableView(_:cellForRowAt:) method. A table view maintains a queue or list of UITableViewCell objects that the data source has marked for reuse. Call this method from your data source object when asked to provide a new cell for the table view. This method dequeues an existing cell if one is available or creates a new one using the class or nib file you previously registered. If no cell is available for reuse and you did not register a class or nib file, this method returns nil.
 
 Give an Idenifire to your cell in main.storyboard file and pass that Identifire to **dequeueReusableCell** like above We have given Identifire "cell".
+
+<img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/13.png">
+
