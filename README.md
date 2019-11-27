@@ -80,7 +80,12 @@ Give an Idenifire to your cell in main.storyboard file and pass that Identifire 
 Now run the App. It will show static TableView on the Screen. Next step is to Hit an API and get data from server and set that data on Table and make it dynamic . Before moving forward Let's discuss that What is an API?
 
 **API**: An application programming interface (API) is an interface or communication protocol between a client and a server intended to simplify the building of client-side software. It has been described as a “contract” between the client and the server, such that if the client makes a request in a specific format, it will always get a response in a specific format or initiate a defined action.
-Above is a format of an API
+Following is a format of an API
 ```
 "https://api.football-data.org/v2/competitions/CL/matches"
 ```
+To download the content from server we use **Alamofire** Network Library.
+
+Why do you need Alamofire at all? Apple already provides URLSession and other classes for downloading content via HTTP, so why complicate things with another third party library?
+
+The short answer is Alamofire is based on URLSession, but it frees you from writing boilerplate code which makes writing networking code much easier. You can access data on the Internet with very little effort, and your code will be much cleaner and easier to read.
