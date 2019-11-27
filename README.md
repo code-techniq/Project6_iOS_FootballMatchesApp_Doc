@@ -28,3 +28,13 @@ After adding UITableview, add Prototype cell in UITableview from attribute Inspe
 Now design the cell with UILabels. Now go to **+** button and drag drop UILabels. Change colors and fonts like we did in **Calculator Tutorial** and set all the constraints. View look like as follow.
 
 <img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/5.png">
+
+Now add a Tableview Cell class in which we set IBOutlets of UILabels of cell.
+Go to **Project Navigator** -> **Right Click** -> **Select NewFile** -> **Cocoa Touch Class** -> **Set Class Name** -> **Subclass of UITbaleViewCell** -> **Language Swift**. Look like as follows. Then just go to **Main.storyboard** file and select **cell** then goto **Identity Inspector** and set **Class** your **cell class name**
+<p float="center">
+  <img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/6.png" width="50%" height="50%">
+ <img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/7.png" width="50%" height="50%">
+  <img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/8.png" width="50%" height="50%">
+ <img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/9.png" width="50%" height="50%">
+</p>
+
