@@ -24,3 +24,7 @@ After adding UITableview, add Prototype cell in UITableview from attribute Inspe
 **Prototype cells are a way to layout the look and feel of a cell inside a table view, they allow us to get a representation of how things are going to work when the application runs and data is passed into the table.**
 
 <img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/4.png">
+
+Now design the cell with UILabels. Now go to **+** button and drag drop UILabels. Change colors and fonts like we did in **Calculator Tutorial** and set all the constraints. View look like as follow.
+
+<img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/5.png">
