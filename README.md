@@ -116,6 +116,7 @@ Now open ViewController.swift class and `import Alamofire`. Declare URL of Api a
 ```  
 let kBaseUrl = "https://api.football-data.org/v2/competitions/CL/matches" 
 ```
+```
+var matchesList = [[String : AnyObject]]()
 
-
-
+```
