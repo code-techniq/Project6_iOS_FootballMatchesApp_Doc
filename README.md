@@ -108,6 +108,7 @@ end
 2. ReachabilitySwift(Check Internet Connection)
 
 After addition of pod file your project look like as follows.
+
 <img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/14.png">
 
 
