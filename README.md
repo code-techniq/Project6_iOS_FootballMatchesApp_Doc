@@ -170,3 +170,52 @@ var matchesList = [[String : AnyObject]]()
                     switch response.result {
                     case .success(_):
   ```
+Now first thing you need to do is print the response and analyse the response. Store the data that you need to display on Table.
+```
+                    if let apiData = response.result.value as? NSDictionary {
+                    if let data = apiData["competition"] as? [String : AnyObject] {
+                        self.leagueNameLbl.text = data["name"] as? String ?? ""
+                                }
+                        if let matches = apiData["matches"] as? [[String : AnyObject]] {
+                            for match in matches {
+                                self.matchesList.append(match)
+                                        }
+                                    }
+                                    self.matchList_TableView.reloadData()
+                                }
+
+```
+at the end reload the tableview so that all the data on table should be dynamic. 
+
+# Set Table content dynamically
+
+First thing is to give number of rows dynamically according to the array count.
+
+```
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return matchesList.count
+    }
+```
+
+Display the Api data to the cell 
+
+```
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //Cell Declaration
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MatchTVC
+        
+        //Parsing Data From The Json Object
+        let score = matchesList[indexPath.row]["score"] as? [String : AnyObject] ?? [String : AnyObject]()
+        let homeTeam = matchesList[indexPath.row]["homeTeam"] as? [String : AnyObject] ?? [String : AnyObject]()
+        let homeTeamName = homeTeam["name"] as? String ?? ""
+        
+        let fullTime = score["fullTime"] as? [String : AnyObject] ?? [String : AnyObject]()
+        let homeTeamScore = fullTime["homeTeam"] as? Int ?? 0
+        let awayTeamcore = fullTime["awayTeam"] as? Int ?? 0
+        cell.leagueTitleLbl.text = matchesList[indexPath.row]["group"] as? String ?? ""
+        cell.dateLbl.text = matchesList[indexPath.row]["utcDate"] as? String ?? ""
+        cell.team1NameLbl.text = homeTeamName
+        return cell
+```
+
