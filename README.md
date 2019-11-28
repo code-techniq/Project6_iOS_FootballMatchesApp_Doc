@@ -220,3 +220,4 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
         }
 ```
 
+Thats It..Now fetch any value from response according to you and display on the Table Cell.👍
