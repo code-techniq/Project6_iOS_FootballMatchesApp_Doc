@@ -92,3 +92,22 @@ The short answer is Alamofire is based on URLSession, but it frees you from writ
 
 We add **Alamofire** dependency using **Cocoa pods** . Add pod file in your project using following link:
 [Install Cocoa pods](https://guides.cocoapods.org/using/using-cocoapods.html)
+
+After add cocoa pods please open your workspace file . You will see an another project in you existing project. Now open uor pod file and write following lines to add dependeces of third party libraries. We are using two libraries
+```
+target 'Football Matches' do
+  
+  use_frameworks!
+
+  pod 'Alamofire'
+  pod 'ReachabilitySwift', :inhibit_warnings => true
+
+end
+```
+1. Alamofire(Networking Library)
+2. ReachabilitySwift(Check Internet Connection)
+
+After addition of pod file your project look like as follows.
+<img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/13.png">
+
+
