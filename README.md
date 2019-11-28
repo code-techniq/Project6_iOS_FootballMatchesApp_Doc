@@ -197,7 +197,7 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
     }
 ```
 
-Display the Api data to the cell 
+**Display Api data on the Cell**
 
 ```
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
