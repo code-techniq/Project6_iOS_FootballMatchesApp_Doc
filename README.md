@@ -111,4 +111,8 @@ After addition of pod file your project look like as follows.
 
 <img src="https://github.com/code-techniq/Project6_iOS_FootballMatchesApp_Doc/blob/master/ScreenShots/14.png">
 
+Now open ViewController.swift class and `import Alamofire`. Declare URL of Api and an array in which we will sotre the response of Api.
 
+`   let kBaseUrl = "https://api.football-data.org/v2/competitions/CL/matches"
+    var matchesList = [[String : AnyObject]]()
+`
