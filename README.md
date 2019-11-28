@@ -217,5 +217,6 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
         cell.dateLbl.text = matchesList[indexPath.row]["utcDate"] as? String ?? ""
         cell.team1NameLbl.text = homeTeamName
         return cell
+        }
 ```
 
