@@ -121,7 +121,7 @@ var matchesList = [[String : AnyObject]]()
 
 ```
 # API Call
-  Now make a function in which we call the Api and get the response and store in the array. First we need to check the internet connection. If Internet connection is available then we call the Api otherwise we will show the alert that Internet connection is not available 
+  Now make a function in which we call the Api and get the response and store in the array. call that function in Viewontroller.swift's  **View life cycle** method **viewDidLoad**. Now we need to check the internet connection. If Internet connection is available then we call the Api otherwise we will show the alert that Internet connection is not available 
  **Check Internet connection**
  ```
  if !NetworkReachabilityManager()!.isReachable {
