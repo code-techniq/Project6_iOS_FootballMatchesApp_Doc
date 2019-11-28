@@ -120,3 +120,53 @@ let kBaseUrl = "https://api.football-data.org/v2/competitions/CL/matches"
 var matchesList = [[String : AnyObject]]()
 
 ```
+# API Call
+  Now make a function in which we call the Api and get the response and store in the array. First we need to check the internet connection. If Internet connection is available then we call the Api otherwise we will show the alert that Internet connection is not available 
+ **Check Internet connection**
+ ```
+ if !NetworkReachabilityManager()!.isReachable {
+            
+            let alert = UIAlertController(title: "Alert", message: "No Internet Connection", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+            
+        }
+ ```
+  
+  If internet is avaialble then in `else` condition call the Api.
+  ```
+  else {
+            let header: [String: String] = ["X-Auth-Token":"d082ae8b70b442de84e52a1804c39e9e"]
+            request(kBaseUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
+                .responseJSON { response in
+                    switch response.result {
+                    case .success(_):
+                    if let apiData = response.result.value as? NSDictionary {
+                    if let data = apiData["competition"] as? [String : AnyObject] {
+                        self.leagueNameLbl.text = data["name"] as? String ?? ""
+                                }
+                        if let matches = apiData["matches"] as? [[String : AnyObject]] {
+                            for match in matches {
+                                    self.matchesList.append(match)
+                                        }
+                                    }
+                                    self.matchList_TableView.reloadData()
+                                }
+                    case .failure(let error):
+                        print(error.localizedDescription)
+              }
+            }
+          }
+  ```
+  above code is used for calling the Api. We have used Authorization Token in Header. Why we use Header?
+  
+  The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status.
+  
+  following method is used to call the Api and get the reponse
+  ```
+  request(kBaseUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
+                .responseJSON { response in
+                    switch response.result {
+                    case .success(_):
+  ```
