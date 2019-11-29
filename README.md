@@ -61,20 +61,20 @@ Datasource methods are used to generate tableView cells, header and footer befor
 
 # Delegates & DataSource
 
-``
+```
       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
       } 
-  ``
+  ```
         
 *tableView:numberOfRowsInSection*: Tells the data source to return the number of rows in a given section of a table view.
 
 
-``
+```
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
   
   }
-  ``
+  ```
 
 This is a DataSource method so it will be called on whichever object has declared itself as the DataSource of the UITableView. It is called when the table view actually needs to display the cell onscreen, based on the number of rows and sections (which you specify in other DataSource methods).
 
